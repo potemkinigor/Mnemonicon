@@ -94,7 +94,7 @@ class ViewController: UIViewController {
     
     @ objc func didTapImageView1(_ sender: UITapGestureRecognizer) {
         
-        var newHeight = 0
+        var newHeight = 1
         var newWidth = 0
         
         if Int(RandomImage1.frame.width) == picturesCoordinatesArray[0].2 && Int(RandomImage1.frame.height) == picturesCoordinatesArray[0].3 {
