@@ -6,6 +6,10 @@ class LibraryViewController: UIViewController {
     var numbers = [Int]()
     var startNumber = 0
     var stopNumber = 0
+    
+    enum RegimeOfVisualization {
+        case codes, numbers, payingCards, months
+    }
 
     @IBOutlet weak var LibraryCollectionView: UICollectionView!
     
@@ -20,6 +24,14 @@ class LibraryViewController: UIViewController {
             images.append(image)
             numbers.append(i)
         }
+        
+        let backGroundImage = UIImageView(frame: UIScreen.main.bounds)
+        
+        
+        backGroundImage.image = UIImage(named: "background.jpg")
+        backGroundImage.contentMode = UIView.ContentMode.scaleAspectFill
+        
+        self.LibraryCollectionView?.backgroundView = backGroundImage
     
     }
 

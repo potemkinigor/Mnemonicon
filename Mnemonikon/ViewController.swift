@@ -18,13 +18,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var RandomImage3: UIImageView!
     @IBOutlet weak var RandomImage4: UIImageView!
     @IBOutlet weak var correctUnswersCountLabel: UILabel!
+    @IBOutlet weak var CheckUnswerButton: UIButton!
     
 
     
     
     var numberAndImageDict: [Int : String] = [:]
     var userCorrentAnswersCount = 0
-    let numbersLimit = 99
     // x, y, width, height:
     var picturesCoordinatesArray = [(20, 140, 183, 142),
                                      (211, 140, 183, 142),
@@ -37,17 +37,20 @@ class ViewController: UIViewController {
     var imageViewsArray: [UIImageView] = []
     var correctPictureNumber = 0
     var userAnswer = 0
+    var LowerBorderOfGuessing = 0
+    var UpperBorderOfGuessing = 0
+    let numbersLimit = upperBorderSelected - lowerBorderSelected
     
     func updatePictures () {
         
         numberAndImageDict.removeAll()
         
-        var randomNumber = arc4random_uniform(UInt32(numbersLimit))
+        var randomNumber = Int.random(in: LowerBorderOfGuessing...UpperBorderOfGuessing)
         imageViewsArray = [RandomImage1, RandomImage2, RandomImage3, RandomImage4]
         
         for _ in 1...4 {
             numberAndImageDict[Int(randomNumber)] =  String(Int(randomNumber)) + ".jpeg"
-            randomNumber = arc4random_uniform(UInt32(numbersLimit))
+            randomNumber = Int.random(in: LowerBorderOfGuessing...UpperBorderOfGuessing)
         }
         
         RandomNumberLabel.text = String(numberAndImageDict.randomElement()!.key)
@@ -87,6 +90,15 @@ class ViewController: UIViewController {
         RandomImage3.addGestureRecognizer(tapGestureRecognizer3)
         RandomImage4.addGestureRecognizer(tapGestureRecognizer4)
         
+        let backGroundImage = UIImageView(frame: UIScreen.main.bounds)
+    
+        backGroundImage.image = UIImage(named: "background.jpg")
+        backGroundImage.contentMode = UIView.ContentMode.scaleAspectFill
+
+        self.view.insertSubview(backGroundImage, at: 0)
+               
+        CheckUnswerButton.layer.cornerRadius = 10
+        CheckUnswerButton.layer.borderWidth = 0
         
         updatePictures()
         
