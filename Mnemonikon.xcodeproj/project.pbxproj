@@ -20,6 +20,7 @@
 		9BB928AE258B8F7000531B12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BB928AC258B8F7000531B12 /* Main.storyboard */; };
 		9BB928B0258B8F7500531B12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BB928AF258B8F7500531B12 /* Assets.xcassets */; };
 		9BB928B3258B8F7500531B12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BB928B1258B8F7500531B12 /* LaunchScreen.storyboard */; };
+		9BFFD380259639680099639F /* LibraryPopUpWindowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFFD37F259639680099639F /* LibraryPopUpWindowViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		9BB928AF258B8F7500531B12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9BB928B2258B8F7500531B12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9BB928B4258B8F7500531B12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BFFD37F259639680099639F /* LibraryPopUpWindowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryPopUpWindowViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 				9B28851325909E6B00851352 /* LibraryButtonViewController.swift */,
 				9B3751F62594737800A24EA7 /* ChooseBordersForTestViewController.swift */,
 				9B6498182594A49000AB7B3D /* MainWindowViewController.swift */,
+				9BFFD37F259639680099639F /* LibraryPopUpWindowViewController.swift */,
 			);
 			path = Mnemonikon;
 			sourceTree = "<group>";
@@ -160,6 +163,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BFFD380259639680099639F /* LibraryPopUpWindowViewController.swift in Sources */,
 				9B28851425909E6B00851352 /* LibraryButtonViewController.swift in Sources */,
 				9BB928AB258B8F6F00531B12 /* ViewController.swift in Sources */,
 				9B2885072590893800851352 /* ImageCollectionViewCell.swift in Sources */,
