@@ -2,16 +2,47 @@ import UIKit
 
 class LibraryButtonViewController: UIViewController {
 
-    @IBOutlet weak var ZeroNinetyNine: UIButton!
-    @IBOutlet weak var OneHundredOnehundredNinetyNine: UIButton!
+    @IBOutlet weak var numbersButton: UIButton!
+    @IBOutlet weak var englishAplhabet: UIButton!
+    @IBOutlet weak var monthsButton: UIButton!
+    @IBOutlet weak var weeksButton: UIButton!
+    
+    enum Regimes {
+        case none, englishAlphabet, months, weeks
+    }
     
     var lowerGrade = 0
     var upperGrade = 0
+    var regime: Regimes = .none
     
-    
+    func updateButtonVisual () {
+     
+        numbersButton.layer.cornerRadius = 10
+        numbersButton.layer.borderWidth = 0
+        
+        englishAplhabet.layer.cornerRadius = 10
+        englishAplhabet.layer.borderWidth = 0
+        
+        monthsButton.layer.cornerRadius = 10
+        monthsButton.layer.borderWidth = 0
+        
+        weeksButton.layer.cornerRadius = 10
+        weeksButton.layer.borderWidth = 0
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let backGroundImage = UIImageView(frame: UIScreen.main.bounds)
+        updateButtonVisual()
+        
+        
+        backGroundImage.image = UIImage(named: "background.jpg")
+        backGroundImage.contentMode = UIView.ContentMode.scaleAspectFill
+
+        self.view.insertSubview(backGroundImage, at: 0)
+        
         
     }
     
@@ -22,23 +53,48 @@ class LibraryButtonViewController: UIViewController {
         destinationController.startNumber = lowerGrade
         destinationController.stopNumber = upperGrade
         
+        print(regime)
+        
+        switch regime {
+        case .englishAlphabet:
+            destinationController.currentRegime = .englishAplhabet
+        case .months:
+            destinationController.currentRegime = .months
+        case .weeks:
+            destinationController.currentRegime = .weeks
+        case .none:
+            print("Пустой энум!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
+        }
+        
+        regime = Regimes.none
+        
         navigationController?.pushViewController(destinationController, animated: true)
         
     }
     
-    @IBAction func TapZeroNinetyNine(_ sender: Any) {
-        lowerGrade = 0
-        upperGrade = 99
+    
+    @IBAction func numbersButtonPush(_ sender: Any) {
+        let popUpVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LibraryPopUpWindowViewController") as! LibraryPopUpWindowViewController
+        
+        self.addChild(popUpVC)
+        self.view.addSubview(popUpVC.view)
+        
+        popUpVC.didMove(toParent: self)
         
     }
     
-    @IBAction func CodesRulesShow(_ sender: Any) {
-        print("Хреня какая-то")
+    @IBAction func weeksButtonPush(_ sender: Any) {
+        regime = .weeks
+    }
+    
+    @IBAction func englishAlphabetPush(_ sender: Any) {
+        regime = .englishAlphabet
+    }
+    
+    @IBAction func monthsButtonPush(_ sender: Any) {
+        regime = .months
     }
     
     
-    @IBAction func TapOneHundredOnehundredNinetyNine(_ sender: Any) {
-        lowerGrade = 100
-        upperGrade = 199
-    }
+    
 }
