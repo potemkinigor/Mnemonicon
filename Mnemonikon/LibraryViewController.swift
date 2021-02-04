@@ -1,4 +1,5 @@
 import UIKit
+import BouncyLayout
 
 class LibraryViewController: UIViewController {
     
@@ -11,6 +12,8 @@ class LibraryViewController: UIViewController {
     var startNumber = 0
     var stopNumber = 0
     var currentRegime: RegimeOfVisualization = .numbers
+    
+    let layout = BouncyLayout()
     
     let englishAlphabet = [
         1 : "A",
@@ -73,8 +76,14 @@ class LibraryViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        layout.itemSize = CGSize(width: 171, height: 150)
+        LibraryCollectionView.collectionViewLayout = layout
+        
         LibraryCollectionView.dataSource = self
         LibraryCollectionView.delegate = self
+        
+        LibraryCollectionView.register(UINib(nibName: "ImagesCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "collectionViewCell")
         
         switch currentRegime {
         case .numbers:
@@ -100,8 +109,6 @@ class LibraryViewController: UIViewController {
             }
         }
 
-        
-        
         let backGroundImage = UIImageView(frame: UIScreen.main.bounds)
         
         
@@ -121,21 +128,22 @@ extension LibraryViewController: UICollectionViewDataSource, UICollectionViewDel
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = LibraryCollectionView.dequeueReusableCell(withReuseIdentifier: "cellImage", for: indexPath) as! ImageCollectionViewCell
+        
+        let cell = LibraryCollectionView.dequeueReusableCell(withReuseIdentifier: "collectionViewCell", for: indexPath) as! ImagesCollectionViewCell
         
         let image = images[indexPath.item]
-        
-        cell.photoView.image = image
+
+        cell.imageView.image = image
         
         switch currentRegime {
         case .numbers:
-            cell.photoName.text = String(numbers[indexPath.item])
+            cell.label.text = String(numbers[indexPath.item])
         case .englishAplhabet:
-            cell.photoName.text = englishAlphabet[indexPath.item + 1]
+            cell.label.text = englishAlphabet[indexPath.item + 1]
         case .months:
-            cell.photoName.text = monthsDict[indexPath.item + 1]
+            cell.label.text = monthsDict[indexPath.item + 1]
         case .weeks:
-            cell.photoName.text = weeksDict[indexPath.item + 1]
+            cell.label.text = weeksDict[indexPath.item + 1]
         }
         return cell
     }

@@ -1,0 +1,6 @@
+framework module Pods_Mnemonikon {
+  umbrella header "Pods-Mnemonikon-umbrella.h"
+
+  export *
+  module * { export * }
+}

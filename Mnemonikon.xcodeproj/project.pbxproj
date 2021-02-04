@@ -3,14 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6057BFE56C23DFF74324E345 /* Pods_Mnemonikon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F209CF9CBA44C26A7B570DD /* Pods_Mnemonikon.framework */; };
 		9B2885022590824600851352 /* LibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2885002590824600851352 /* LibraryViewController.swift */; };
-		9B2885032590824600851352 /* LibraryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B2885012590824600851352 /* LibraryViewController.xib */; };
-		9B2885072590893800851352 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2885052590893800851352 /* ImageCollectionViewCell.swift */; };
-		9B2885082590893800851352 /* ImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B2885062590893800851352 /* ImageCollectionViewCell.xib */; };
 		9B28851425909E6B00851352 /* LibraryButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B28851325909E6B00851352 /* LibraryButtonViewController.swift */; };
 		9B3751F72594737800A24EA7 /* ChooseBordersForTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3751F62594737800A24EA7 /* ChooseBordersForTestViewController.swift */; };
 		9B6498192594A49000AB7B3D /* MainWindowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6498182594A49000AB7B3D /* MainWindowViewController.swift */; };
@@ -21,13 +19,15 @@
 		9BB928B0258B8F7500531B12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BB928AF258B8F7500531B12 /* Assets.xcassets */; };
 		9BB928B3258B8F7500531B12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BB928B1258B8F7500531B12 /* LaunchScreen.storyboard */; };
 		9BFFD380259639680099639F /* LibraryPopUpWindowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFFD37F259639680099639F /* LibraryPopUpWindowViewController.swift */; };
+		CE03F0A325CAD26500A903E4 /* ImagesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE03F0A125CAD26500A903E4 /* ImagesCollectionViewCell.swift */; };
+		CE03F0A425CAD26500A903E4 /* ImagesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE03F0A225CAD26500A903E4 /* ImagesCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F209CF9CBA44C26A7B570DD /* Pods_Mnemonikon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mnemonikon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		11E8710F94EB6570ECCAE9AB /* Pods-Mnemonikon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mnemonikon.debug.xcconfig"; path = "Target Support Files/Pods-Mnemonikon/Pods-Mnemonikon.debug.xcconfig"; sourceTree = "<group>"; };
+		3A11AEDC840068F35B33C0C9 /* Pods-Mnemonikon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mnemonikon.release.xcconfig"; path = "Target Support Files/Pods-Mnemonikon/Pods-Mnemonikon.release.xcconfig"; sourceTree = "<group>"; };
 		9B2885002590824600851352 /* LibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewController.swift; sourceTree = "<group>"; };
-		9B2885012590824600851352 /* LibraryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LibraryViewController.xib; sourceTree = "<group>"; };
-		9B2885052590893800851352 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
-		9B2885062590893800851352 /* ImageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCollectionViewCell.xib; sourceTree = "<group>"; };
 		9B28851325909E6B00851352 /* LibraryButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryButtonViewController.swift; sourceTree = "<group>"; };
 		9B3751F62594737800A24EA7 /* ChooseBordersForTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseBordersForTestViewController.swift; sourceTree = "<group>"; };
 		9B6498182594A49000AB7B3D /* MainWindowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowViewController.swift; sourceTree = "<group>"; };
@@ -40,6 +40,8 @@
 		9BB928B2258B8F7500531B12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9BB928B4258B8F7500531B12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9BFFD37F259639680099639F /* LibraryPopUpWindowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryPopUpWindowViewController.swift; sourceTree = "<group>"; };
+		CE03F0A125CAD26500A903E4 /* ImagesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesCollectionViewCell.swift; sourceTree = "<group>"; };
+		CE03F0A225CAD26500A903E4 /* ImagesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImagesCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,17 +49,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6057BFE56C23DFF74324E345 /* Pods_Mnemonikon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		587D87DCB22FEA64FB5352DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F209CF9CBA44C26A7B570DD /* Pods_Mnemonikon.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		95DC6A80447419D9B5B67538 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				11E8710F94EB6570ECCAE9AB /* Pods-Mnemonikon.debug.xcconfig */,
+				3A11AEDC840068F35B33C0C9 /* Pods-Mnemonikon.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		9BB9289A258B8F6F00531B12 = {
 			isa = PBXGroup;
 			children = (
 				9BB928A5258B8F6F00531B12 /* Mnemonikon */,
 				9BB928A4258B8F6F00531B12 /* Products */,
+				95DC6A80447419D9B5B67538 /* Pods */,
+				587D87DCB22FEA64FB5352DA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,13 +102,12 @@
 				9BB928B1258B8F7500531B12 /* LaunchScreen.storyboard */,
 				9BB928B4258B8F7500531B12 /* Info.plist */,
 				9B2885002590824600851352 /* LibraryViewController.swift */,
-				9B2885012590824600851352 /* LibraryViewController.xib */,
-				9B2885052590893800851352 /* ImageCollectionViewCell.swift */,
-				9B2885062590893800851352 /* ImageCollectionViewCell.xib */,
 				9B28851325909E6B00851352 /* LibraryButtonViewController.swift */,
 				9B3751F62594737800A24EA7 /* ChooseBordersForTestViewController.swift */,
 				9B6498182594A49000AB7B3D /* MainWindowViewController.swift */,
 				9BFFD37F259639680099639F /* LibraryPopUpWindowViewController.swift */,
+				CE03F0A125CAD26500A903E4 /* ImagesCollectionViewCell.swift */,
+				CE03F0A225CAD26500A903E4 /* ImagesCollectionViewCell.xib */,
 			);
 			path = Mnemonikon;
 			sourceTree = "<group>";
@@ -98,9 +119,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9BB928B7258B8F7500531B12 /* Build configuration list for PBXNativeTarget "Mnemonikon" */;
 			buildPhases = (
+				96C83B7788DAC4A001681341 /* [CP] Check Pods Manifest.lock */,
 				9BB9289F258B8F6F00531B12 /* Sources */,
 				9BB928A0258B8F6F00531B12 /* Frameworks */,
 				9BB928A1258B8F6F00531B12 /* Resources */,
+				86445F50587E0AA551CD2A05 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -150,13 +173,54 @@
 			files = (
 				9BB928B3258B8F7500531B12 /* LaunchScreen.storyboard in Resources */,
 				9BB928B0258B8F7500531B12 /* Assets.xcassets in Resources */,
-				9B2885032590824600851352 /* LibraryViewController.xib in Resources */,
+				CE03F0A425CAD26500A903E4 /* ImagesCollectionViewCell.xib in Resources */,
 				9BB928AE258B8F7000531B12 /* Main.storyboard in Resources */,
-				9B2885082590893800851352 /* ImageCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		86445F50587E0AA551CD2A05 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mnemonikon/Pods-Mnemonikon-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mnemonikon/Pods-Mnemonikon-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Mnemonikon/Pods-Mnemonikon-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		96C83B7788DAC4A001681341 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Mnemonikon-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9BB9289F258B8F6F00531B12 /* Sources */ = {
@@ -166,11 +230,11 @@
 				9BFFD380259639680099639F /* LibraryPopUpWindowViewController.swift in Sources */,
 				9B28851425909E6B00851352 /* LibraryButtonViewController.swift in Sources */,
 				9BB928AB258B8F6F00531B12 /* ViewController.swift in Sources */,
-				9B2885072590893800851352 /* ImageCollectionViewCell.swift in Sources */,
 				9BB928A7258B8F6F00531B12 /* AppDelegate.swift in Sources */,
 				9B2885022590824600851352 /* LibraryViewController.swift in Sources */,
 				9B6498192594A49000AB7B3D /* MainWindowViewController.swift in Sources */,
 				9B3751F72594737800A24EA7 /* ChooseBordersForTestViewController.swift in Sources */,
+				CE03F0A325CAD26500A903E4 /* ImagesCollectionViewCell.swift in Sources */,
 				9BB928A9258B8F6F00531B12 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -315,6 +379,7 @@
 		};
 		9BB928B8258B8F7500531B12 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11E8710F94EB6570ECCAE9AB /* Pods-Mnemonikon.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -327,12 +392,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = IgorPotemkinApps.Mnemonikon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		9BB928B9258B8F7500531B12 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A11AEDC840068F35B33C0C9 /* Pods-Mnemonikon.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -345,7 +411,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = IgorPotemkinApps.Mnemonikon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

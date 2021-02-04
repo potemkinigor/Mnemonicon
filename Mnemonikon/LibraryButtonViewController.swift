@@ -63,7 +63,7 @@ class LibraryButtonViewController: UIViewController {
         case .weeks:
             destinationController.currentRegime = .weeks
         case .none:
-            print("Пустой энум!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
+            print("Пусто")
         }
         
         regime = Regimes.none
